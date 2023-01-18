@@ -225,9 +225,16 @@ ansible-playbook node-exporter.yaml
 
 Запускаю grafana через публичный ip 51.250.47.146:3000 
 
+![Снимок экрана от 2023-01-18 18-58-21](https://user-images.githubusercontent.com/94833070/213166060-ea96d495-d7be-4d39-9352-a4d0c4f84b20.png)
 
+ Настраиваю ее на взаимодейтсвие с ранее развернутым Prometheus.
+ 
+ ![Снимок экрана от 2023-01-18 19-00-58](https://user-images.githubusercontent.com/94833070/213166421-ee8e4040-bfb8-4f3c-8a52-c223e7dd57f7.png)
 
- Настройте ее на взаимодейтсвие с ранее развернутым Prometheus. Настройте дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. Добавьте необходимые tresholds на соответствующие графики.
+ Далее настраиваю дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. Добавьте необходимые tresholds на соответствующие графики.
+ 
+ 
+ 
 
 # **Логи**
 
