@@ -282,18 +282,21 @@ ___
 
 Развернули  один VPC. 
 
-![Снимок экрана от 2023-01-18 20-41-33](https://user-images.githubusercontent.com/94833070/213188278-39dbc02f-b9f3-4875-a9e1-e5ee760402f2.png)
+![Снимок экрана от 2023-01-18 20-48-48](https://user-images.githubusercontent.com/94833070/213188748-6d37317d-b473-4f80-beba-3fcca58611e6.png)
 
+Сервера web, Prometheus, Elasticsearch помещаю в приватные подсети.
 
-Сервера web, Prometheus, Elasticsearch поместите в приватные подсети.
+Сервера Grafana, Kibana, application load balancer в публичной подсети  а так же bastion host 
 
-Сервера Grafana, Kibana, application load balancer определите в публичную подсеть.
+![Снимок экрана от 2023-01-18 20-52-49](https://user-images.githubusercontent.com/94833070/213189307-0acc5337-835e-4e11-ac08-3046ce072eaa.png)
 
-Настройте Security Groups соответствующих сервисов на входящий трафик только к нужным портам.
+![Снимок экрана от 2023-01-18 21-00-17](https://user-images.githubusercontent.com/94833070/213190890-52444114-9860-4553-9efc-3a353080d211.png)
 
-Настройте ВМ с публичным адресом, в которой будет открыт только один порт - **ssh**.
+Настраиваю все security groups на разрешение входящего ssh через bastion host. Подключаться по ssh ко всем хостам только через этот хост по 22 порту.
 
-Настройте все security groups на разрешение входящего ssh из этой security group. Эта вм будет реализовывать концепцию bastion host. Потом можно будет подключаться по ssh ко всем хостам через этот хост.
+![Снимок экрана от 2023-01-18 18-06-11](https://user-images.githubusercontent.com/94833070/213157256-44bbeac2-7ee7-40a9-a856-40d86329af92.png)
+
+Доступ через бастион работает.
 
 # **Резервное копирование**
 
