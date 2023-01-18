@@ -248,15 +248,23 @@ ___
  
  ![Снимок экрана от 2023-01-18 19-18-22](https://user-images.githubusercontent.com/94833070/213170386-fcab6bd6-770b-4671-823c-29b8b3bf0791.png)
 
- 
+ Grafana все видит и все работает)
 
 # **Логи**
 
-**Cоздайте ВМ, разверните на ней Elasticsearch.**
+**Cоздаю ВМ и разверачиваю на ней Elastic.**  vm-elastic : 10.0.5.11 и устанавливаю ansible-playbook elastic.yaml
 
- Установите filebeat в ВМ к web-серверам, настройте на отправку access.log, error.log nginx в Elasticsearch.
+ Установаю filebeat на машины vm-web-1 - 10.0.1.7 и  vm-web-2 - 10.0.2.7 через ansible-playbook filebeat.yaml
 
-**Создайте ВМ, разверните на ней Kibana**, сконфигурируйте соединение с Elasticsearch.
+**Создаю ВМ и разверачиваю на ней Kibana** через ansible-playbook kibana.yaml 
+
+Важно версия Elastic и Kibana должна должна быть  одной версии и савместима с OS.
+
+Заходим через публичный ip Kibana 51.250.41.244:5601
+
+Доступ есть 
+
+![Снимок экрана от 2023-01-18 20-34-17](https://user-images.githubusercontent.com/94833070/213185151-9febfea6-b06d-44a7-a304-2f470bdc7d53.png)
 
 # **Сеть**
 
