@@ -266,9 +266,24 @@ ___
 
 ![Снимок экрана от 2023-01-18 20-34-17](https://user-images.githubusercontent.com/94833070/213185151-9febfea6-b06d-44a7-a304-2f470bdc7d53.png)
 
+Добавляю Index patterns , как видим kibana видит filebeat
+
+![Снимок экрана от 2023-01-18 20-36-55](https://user-images.githubusercontent.com/94833070/213185890-3527a7ac-9ef2-4178-bed4-c2834a4e3ed9.png)
+
+Добавляем Discover для отображения логов nginx 
+
+Видим логи nginx за последние 3 часа на серверах web-1  и  web-2 
+
+
+![Снимок экрана от 2023-01-18 20-41-33](https://user-images.githubusercontent.com/94833070/213186920-9fe56933-bfa2-4bc0-b664-4ba37efd2d4d.png)
+
+
 # **Сеть**
 
-Разверните один VPC. Сервера web, Prometheus, Elasticsearch поместите в приватные подсети. Сервера Grafana, Kibana, application load balancer определите в публичную подсеть.
+Развернули  один VPC. 
+
+
+Сервера web, Prometheus, Elasticsearch поместите в приватные подсети. Сервера Grafana, Kibana, application load balancer определите в публичную подсеть.
 
 Настройте Security Groups соответствующих сервисов на входящий трафик только к нужным портам.
 
