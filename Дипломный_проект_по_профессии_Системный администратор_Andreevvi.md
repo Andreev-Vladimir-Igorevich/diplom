@@ -233,6 +233,13 @@ ___
 
  Далее настраиваю дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. Добавьте необходимые tresholds на соответствующие графики.
  
+Вот так настраиваю nginx_http_response_count_total
+
+![Снимок экрана от 2023-01-18 20-12-44](https://user-images.githubusercontent.com/94833070/213181051-6dd50a8e-1e7b-4c22-9a27-ef349bdebc4b.png)
+
+и Добавляю необходимые tresholds на соответствующий график.
+
+Остальные настраиваю по аналогии.
 
  Вот что получилось:
  
