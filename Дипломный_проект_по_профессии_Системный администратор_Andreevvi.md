@@ -282,8 +282,12 @@ ___
 
 Развернули  один VPC. 
 
+![Снимок экрана от 2023-01-18 20-41-33](https://user-images.githubusercontent.com/94833070/213188278-39dbc02f-b9f3-4875-a9e1-e5ee760402f2.png)
 
-Сервера web, Prometheus, Elasticsearch поместите в приватные подсети. Сервера Grafana, Kibana, application load balancer определите в публичную подсеть.
+
+Сервера web, Prometheus, Elasticsearch поместите в приватные подсети.
+
+Сервера Grafana, Kibana, application load balancer определите в публичную подсеть.
 
 Настройте Security Groups соответствующих сервисов на входящий трафик только к нужным портам.
 
