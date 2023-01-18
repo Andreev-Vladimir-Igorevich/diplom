@@ -187,11 +187,10 @@ https://disk.yandex.ru/d/Kv29_vdl0Iz9tw
 
 Создаем Target Group, включите в нее две созданных ВМ.
 
-Создаем Backend Group, настройте backends на target group ранее созданную. Настройте healthcheck на корень (/) и порт 80, протокол HTTP
-
-Создаем HTTP router. Путь указал - /.
+Настраиваю healthcheck на корень (/) и порт 80, протокол HTTP . Создаем HTTP router. Путь указал - /.
 
 Создаю Application load balancer для распределения трафика на web-сервера, созданные ранее.
+
 Задаю listener тип auto, порт 80.
 
 Тестирую сайт curl -v <публичный IP балансера>:80
