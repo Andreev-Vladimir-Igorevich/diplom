@@ -209,9 +209,9 @@ ___
 
 **Создайте ВМ, разверните на ней Prometheus**. 
 
-Устанавливаю на  ВМ: vm-web-1 - 10.0.1.7 и  vm-web-2 - 10.0.2.7 Node Exporter и Nginx Log Exporter. через ansible-playbook nginxlog-exporter.yaml и
+Устанавливаю на  ВМ: vm-web-1 - 10.0.1.7 и  vm-web-2 - 10.0.2.7 Node Exporter и Nginx Log Exporter через ansible-playbook nginxlog-exporter.yaml
 
-ansible-playbook node-exporter.yaml
+и ansible-playbook node-exporter.yaml.
 
 Устанавливаю Prometheus на vm-prometheus -10.0.5.9 через ansible-playbook prometheus.yaml
 
@@ -233,7 +233,14 @@ ansible-playbook node-exporter.yaml
 
  Далее настраиваю дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. Добавьте необходимые tresholds на соответствующие графики.
  
+
+ Вот что получилось:
  
+ ![Снимок экрана от 2023-01-18 19-18-19](https://user-images.githubusercontent.com/94833070/213170369-091456e3-f8fb-4f8a-a582-0b02a4277141.png)
+
+ 
+ ![Снимок экрана от 2023-01-18 19-18-22](https://user-images.githubusercontent.com/94833070/213170386-fcab6bd6-770b-4671-823c-29b8b3bf0791.png)
+
  
 
 # **Логи**
