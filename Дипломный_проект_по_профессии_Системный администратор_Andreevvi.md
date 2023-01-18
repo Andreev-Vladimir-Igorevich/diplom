@@ -181,7 +181,7 @@ https://disk.yandex.ru/d/Kv29_vdl0Iz9tw
 
 Создайте **две ВМ в разных зонах, установите на них сервер nginx**, если его там нет. ОС и содержимое ВМ должно быть идентичным, это будут наши web-сервера.
 
-Устанавливаем на vm-web-1 - 10.0.1.7 и  vm-web-2 - 10.0.2.7
+Устанавливаем на vm-web-1 - 10.0.1.7 и  vm-web-2 - 10.0.2.7 через ansible-playbook nginx.yaml 
 
 Создаем Target Group, включите в нее две созданных ВМ.
 
@@ -195,22 +195,37 @@ https://disk.yandex.ru/d/Kv29_vdl0Iz9tw
 Тестирую сайт curl -v <публичный IP балансера>:80
 ___
 
-Захожу на vm-web-1
+Захожу на vm-web-1 через бастион host
 
 ![Снимок экрана от 2023-01-18 18-06-11](https://user-images.githubusercontent.com/94833070/213157256-44bbeac2-7ee7-40a9-a856-40d86329af92.png)
 
-таким же образом можно зайт на любую машину.
+таким же образом можно зайти на любую машину.
 
 ![Снимок экрана от 2023-01-18 18-16-08](https://user-images.githubusercontent.com/94833070/213157957-1be13201-bd68-434a-a698-ff8037bca099.png)
 
+Сайт работает)
 
 # **Мониторинг**
 
 **Создайте ВМ, разверните на ней Prometheus**. 
 
-На каждую ВМ из web серверов установите Node Exporter и Nginx Log Exporter. Настройте Prometheus на сбор метрик с этих exporter.
+Устанавливаю на  ВМ: vm-web-1 - 10.0.1.7 и  vm-web-2 - 10.0.2.7 Node Exporter и Nginx Log Exporter. через ansible-playbook nginxlog-exporter.yaml и
 
-**Создайте ВМ, установите туда Grafana**.
+ansible-playbook node-exporter.yaml
+
+Устанавливаю Prometheus на vm-prometheus -10.0.5.9 через ansible-playbook prometheus.yaml
+
+Метики доступны на данной машине 
+
+![Снимок экрана от 2023-01-18 18-31-11](https://user-images.githubusercontent.com/94833070/213160802-14bfb492-ad57-4050-8572-e975f05a3a2f.png)
+
+Настраиваю Prometheus на сбор метрик с этих exporter.
+
+**Создаю ВМ, и устанавливаю туда Grafana**. через ansible-playbook grafina.yaml
+
+Запускаю grafana через публичный ip 51.250.47.146:3000 
+
+
 
  Настройте ее на взаимодейтсвие с ранее развернутым Prometheus. Настройте дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. Добавьте необходимые tresholds на соответствующие графики.
 
