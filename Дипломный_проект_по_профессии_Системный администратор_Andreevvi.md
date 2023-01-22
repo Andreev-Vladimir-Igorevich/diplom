@@ -253,7 +253,8 @@ ___
  
  ![Снимок экрана от 2023-01-18 19-18-22](https://user-images.githubusercontent.com/94833070/213170386-fcab6bd6-770b-4671-823c-29b8b3bf0791.png)
  
- ![Снимок экрана от 2023-01-22 15-26-02](https://user-images.githubusercontent.com/94833070/213907026-73434202-f015-45df-8e21-880cb7a48803.png)
+ 
+![Снимок экрана от 2023-01-22 15-26-02](https://user-images.githubusercontent.com/94833070/213907083-843b68a4-61c9-4ffc-ad1f-c61ae190f9d6.png)
 
 
  Grafana все видит и все работает)
