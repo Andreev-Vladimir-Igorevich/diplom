@@ -198,11 +198,18 @@ ___
 
 Захожу на vm-web-1 через бастион host
 
-![Снимок экрана от 2023-01-18 18-06-11](https://user-images.githubusercontent.com/94833070/213157256-44bbeac2-7ee7-40a9-a856-40d86329af92.png)
+![Снимок экрана от 2023-01-24 23-36-45](https://user-images.githubusercontent.com/94833070/214353030-b6377933-dea4-4d6d-9814-0909f0559424.png)
+
 
 таким же образом можно зайти на любую машину.
 
-![Снимок экрана от 2023-01-18 18-16-08](https://user-images.githubusercontent.com/94833070/213157957-1be13201-bd68-434a-a698-ff8037bca099.png)
+Проверяем работу сайта 
+
+![Снимок экрана от 2023-01-24 23-40-42](https://user-images.githubusercontent.com/94833070/214353856-0615b5b4-99e3-42af-b8f3-eef5883fb774.png)
+
+
+![Снимок экрана от 2023-01-24 23-42-43](https://user-images.githubusercontent.com/94833070/214354370-f23b2f94-b736-4341-8ca9-b64fc0f4db93.png)
+
 
 Сайт работает)
 
