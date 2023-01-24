@@ -278,11 +278,13 @@ ___
 
 Важно версия Elastic и Kibana должна быть  одной версии и савместима с OS.
 
-Заходим через публичный ip Kibana 51.250.41.244:5601
+Заходим через публичный ip Kibana 51.250.36.199:5601
 
 Доступ есть 
 
-![Снимок экрана от 2023-01-18 20-34-17](https://user-images.githubusercontent.com/94833070/213185151-9febfea6-b06d-44a7-a304-2f470bdc7d53.png)
+
+![Снимок экрана от 2023-01-25 01-13-03](https://user-images.githubusercontent.com/94833070/214374412-2a334a29-8477-4e12-8d19-103b2d7d44ee.png)
+
 
 Добавляю Index patterns , как видим kibana видит filebeat
 
@@ -290,11 +292,9 @@ ___
 
 Добавляем Discover для отображения логов nginx 
 
-Видим логи nginx за последние 3 часа на серверах web-1  и  web-2 
+Видим логи nginx за последний час на серверах web-1  и  web-2 
 
-
-![Снимок экрана от 2023-01-18 20-41-33](https://user-images.githubusercontent.com/94833070/213186920-9fe56933-bfa2-4bc0-b664-4ba37efd2d4d.png)
-
+![Снимок экрана от 2023-01-25 01-09-36](https://user-images.githubusercontent.com/94833070/214375340-0a72be63-9311-448c-aa7e-18a23c299651.png)
 
 # **Сеть**
 
