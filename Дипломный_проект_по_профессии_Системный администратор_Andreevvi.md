@@ -231,27 +231,36 @@ ___
 
 **Создаю ВМ, и устанавливаю туда Grafana**. через ansible-playbook grafina.yaml
 
-Запускаю grafana через публичный ip 51.250.47.146:3000 
+Запускаю grafana через публичный ip 51.250.46.233:3000 
 
-![Снимок экрана от 2023-01-18 18-58-21](https://user-images.githubusercontent.com/94833070/213166060-ea96d495-d7be-4d39-9352-a4d0c4f84b20.png)
+![Снимок экрана от 2023-01-24 23-59-00](https://user-images.githubusercontent.com/94833070/214358117-41898936-e93d-4747-9f9c-9b0b91ab85ac.png)
+
 
  Настраиваю ее на взаимодейтсвие с ранее развернутым Prometheus.
  
- ![Снимок экрана от 2023-01-18 19-00-58](https://user-images.githubusercontent.com/94833070/213166421-ee8e4040-bfb8-4f3c-8a52-c223e7dd57f7.png)
+![Снимок экрана от 2023-01-25 00-11-43](https://user-images.githubusercontent.com/94833070/214364645-9e247e8d-d940-4588-a069-abb1595646fe.png)
 
- Далее настраиваю дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. 
+
+Добавляю дашборды Node Exporter и Nginx Log Exporter
+
+Далее настраиваю дешборды с отображением метрик, минимальный набор - Utilization, Saturation, Errors для CPU, RAM, диски, сеть, http_response_count_total, http_response_size_bytes. 
  
 Добавляю необходимые tresholds на соответствующие графики.
  
 Вот так настраиваю nginx_http_response_count_total
 
-![Снимок экрана от 2023-01-18 20-12-44](https://user-images.githubusercontent.com/94833070/213181051-6dd50a8e-1e7b-4c22-9a27-ef349bdebc4b.png)
+
+
+
+
+
+
 
 и добавляю необходимые tresholds на соответствующий график.
 
 Остальные настраиваю по аналогии.
 
-Добавляю дашборды Node Exporter и Nginx Log Exporter
+
 
  Вот что получилось:
  
