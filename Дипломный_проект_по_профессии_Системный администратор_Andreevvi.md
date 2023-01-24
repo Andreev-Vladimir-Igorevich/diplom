@@ -288,7 +288,9 @@ ___
 
 Добавляю Index patterns , как видим kibana видит filebeat
 
-![Снимок экрана от 2023-01-18 20-36-55](https://user-images.githubusercontent.com/94833070/213185890-3527a7ac-9ef2-4178-bed4-c2834a4e3ed9.png)
+
+![Снимок экрана от 2023-01-25 01-21-41](https://user-images.githubusercontent.com/94833070/214376211-0a53b441-86f1-4e7e-b661-d3bee91f30c7.png)
+
 
 Добавляем Discover для отображения логов nginx 
 
