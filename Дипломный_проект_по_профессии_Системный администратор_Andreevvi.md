@@ -249,28 +249,21 @@ ___
  
 Вот так настраиваю nginx_http_response_count_total
 
-
-
-
-
-
+![Снимок экрана от 2023-01-25 00-54-40](https://user-images.githubusercontent.com/94833070/214371001-d3b28096-595d-4059-950a-0bb46897f9f2.png)
 
 
 и добавляю необходимые tresholds на соответствующий график.
 
 Остальные настраиваю по аналогии.
 
-
-
  Вот что получилось:
  
- ![Снимок экрана от 2023-01-18 19-18-19](https://user-images.githubusercontent.com/94833070/213170369-091456e3-f8fb-4f8a-a582-0b02a4277141.png)
 
- 
- ![Снимок экрана от 2023-01-18 19-18-22](https://user-images.githubusercontent.com/94833070/213170386-fcab6bd6-770b-4671-823c-29b8b3bf0791.png)
- 
- 
-![Снимок экрана от 2023-01-22 15-26-02](https://user-images.githubusercontent.com/94833070/213907083-843b68a4-61c9-4ffc-ad1f-c61ae190f9d6.png)
+
+
+
+
+
 
 
  Grafana все видит и все работает)
