@@ -296,50 +296,61 @@ ___
 
 Видим логи nginx за последний час на серверах web-1  и  web-2 
 
-![Снимок экрана от 2023-01-25 01-09-36](https://user-images.githubusercontent.com/94833070/214375340-0a72be63-9311-448c-aa7e-18a23c299651.png)
+
+![Снимок экрана от 2023-01-25 01-09-36](https://user-images.githubusercontent.com/94833070/214376631-d10bc623-80bd-48c0-a961-43c8bb023d09.png)
+
 
 # **Сеть**
 
 Развернули  один VPC. 
 
-![Снимок экрана от 2023-01-18 20-48-48](https://user-images.githubusercontent.com/94833070/213188748-6d37317d-b473-4f80-beba-3fcca58611e6.png)
+![Снимок экрана от 2023-01-25 01-25-39](https://user-images.githubusercontent.com/94833070/214376924-97e0ce11-ee23-46aa-8ccd-7ffb5720100c.png)
+
 
 Сервера web, Prometheus, Elasticsearch помещаю в приватные подсети.
 
 Сервера Grafana, Kibana, application load balancer в публичной подсети  а так же bastion host 
 
-![Снимок экрана от 2023-01-18 20-52-49](https://user-images.githubusercontent.com/94833070/213189307-0acc5337-835e-4e11-ac08-3046ce072eaa.png)
 
-![Снимок экрана от 2023-01-18 21-00-17](https://user-images.githubusercontent.com/94833070/213190890-52444114-9860-4553-9efc-3a353080d211.png)
+![Снимок экрана от 2023-01-25 01-29-04](https://user-images.githubusercontent.com/94833070/214377671-18fdb9b9-f5c6-49ba-b0ad-2341293de403.png)
+
+Группы безопасности: 
+
+![Снимок экрана от 2023-01-25 01-31-43](https://user-images.githubusercontent.com/94833070/214378427-e3ddf3c8-2b72-4aa7-88e1-fc45bdfc52f8.png)
+
 
 Настраиваю все security groups на разрешение входящего ssh через bastion host. Подключаться по ssh ко всем хостам только через этот хост по 22 порту.
 
-![Снимок экрана от 2023-01-18 18-06-11](https://user-images.githubusercontent.com/94833070/213157256-44bbeac2-7ee7-40a9-a856-40d86329af92.png)
+
+![Снимок экрана от 2023-01-24 23-36-45](https://user-images.githubusercontent.com/94833070/214378610-96c7248d-eef2-4d49-ba92-ee0799ecc242.png)
+
 
 Доступ через бастион работает.
+
+
 
 # **Резервное копирование**
 
 Создадим snapshot дисков всех ВМ. Ограничим время жизни snaphot в неделю. Сами snaphot настроем на ежедневное копирование.
 
-1 Создадим snapshot всех 7 дисков.
+1 Создадим snapshot всех 7 дисков. через terratorm : 
 
-![Снимок экрана от 2023-01-18 21-06-19](https://user-images.githubusercontent.com/94833070/213192306-fa45a4ba-6f14-4eaf-9004-6eb03e7dc5db.png)
+
 
 Создали 
 
-![Снимок экрана от 2023-01-18 21-08-53](https://user-images.githubusercontent.com/94833070/213192926-eefa6b08-35b2-4ced-bf5a-9c1759dbd726.png)
+
 
 
 2 Ограничим время жизни snaphot в неделю и сами snaphot настроем на ежедневное копирование.
 
 Создадим расписания снимков согласно требованиям  
 
-![Снимок экрана от 2023-01-18 21-40-24](https://user-images.githubusercontent.com/94833070/213200578-16c0b3f3-68b2-40da-8683-b827b4a85d26.png)
+
 
 Каждый день в 14:35 хранение 7 дней.
 
-![Снимок экрана от 2023-01-18 21-43-07](https://user-images.githubusercontent.com/94833070/213201178-9f87a5ff-c105-4a98-b2f4-63a0ad88bd58.png)
+
 
 Как видим snapshot дисков всех ВМ создались!))
 
