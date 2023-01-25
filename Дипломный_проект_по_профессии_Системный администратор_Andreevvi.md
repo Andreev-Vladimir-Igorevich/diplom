@@ -347,7 +347,11 @@ password : andreevvi
 
 Ровно в 19.00 по Лондону или 22.00 по Москве будут созданы snapshot всех дисков
 
+Начались создаваться snapshot 
+
 ![Снимок экрана от 2023-01-25 02-09-30](https://user-images.githubusercontent.com/94833070/214386022-b0845166-2be5-4a84-8901-492a06dd0e6c.png)
+
+и дальше создались все остальные 
 
 ![Снимок экрана от 2023-01-25 02-23-11](https://user-images.githubusercontent.com/94833070/214388670-d59cb9a9-5328-4d85-a320-aebd3b607bcf.png)
 
