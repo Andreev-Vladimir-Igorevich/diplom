@@ -324,7 +324,7 @@ password : andreevvi
 Настраиваю все security groups на разрешение входящего ssh через bastion host. Подключаться по ssh ко всем хостам только через этот хост по 22 порту.
 
 
-![Снимок экрана от 2023-01-24 23-36-45](https://user-images.githubusercontent.com/94833070/214378610-96c7248d-eef2-4d49-ba92-ee0799ecc242.png)
+![Снимок экрана от 2023-01-25 16-30-47](https://user-images.githubusercontent.com/94833070/214535327-5cb0f957-d51d-4c39-aa71-47c17f03d4d2.png)
 
 
 Доступ через бастион работает.
