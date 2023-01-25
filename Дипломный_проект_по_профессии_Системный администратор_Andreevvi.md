@@ -198,14 +198,13 @@ ___
 
 Захожу на vm-web-1 через бастион host
 
-![Снимок экрана от 2023-01-24 23-36-45](https://user-images.githubusercontent.com/94833070/214353030-b6377933-dea4-4d6d-9814-0909f0559424.png)
-
+![Снимок экрана от 2023-01-25 16-30-47](https://user-images.githubusercontent.com/94833070/214528195-f9dfec53-8191-4daa-9775-768e2b9f67d5.png)
 
 таким же образом можно зайти на любую машину.
 
 Проверяем работу сайта 
 
-![Снимок экрана от 2023-01-24 23-40-42](https://user-images.githubusercontent.com/94833070/214353856-0615b5b4-99e3-42af-b8f3-eef5883fb774.png)
+![Снимок экрана от 2023-01-25 16-34-30](https://user-images.githubusercontent.com/94833070/214528538-cf34c8e5-37c2-41f6-93ff-8ede16091487.png)
 
 
 ![Снимок экрана от 2023-01-24 23-42-43](https://user-images.githubusercontent.com/94833070/214354370-f23b2f94-b736-4341-8ca9-b64fc0f4db93.png)
@@ -225,7 +224,7 @@ ___
 
 Метики доступны на данной машине 
 
-![Снимок экрана от 2023-01-18 18-31-11](https://user-images.githubusercontent.com/94833070/213160802-14bfb492-ad57-4050-8572-e975f05a3a2f.png)
+![Снимок экрана от 2023-01-25 16-37-13](https://user-images.githubusercontent.com/94833070/214529116-f91c4329-35a1-4bda-8378-687b63618736.png)
 
 Настраиваю Prometheus на сбор метрик с этих exporter.
 
