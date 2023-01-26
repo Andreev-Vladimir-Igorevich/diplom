@@ -269,6 +269,8 @@ password : andreevvi
 
 ![Снимок экрана от 2023-01-26 00-02-37](https://user-images.githubusercontent.com/94833070/214825479-fb62a8e6-b826-4515-a5cc-e9d95ac39639.png)
 
+Спустя какое то время видим приевышение 
+
 ![Снимок экрана от 2023-01-26 18-24-22](https://user-images.githubusercontent.com/94833070/214825669-a3d67575-d2fe-481c-9899-d76fb69cf937.png)
 
 ![Снимок экрана от 2023-01-26 18-20-32](https://user-images.githubusercontent.com/94833070/214825703-19b571ab-197e-43e2-a402-1a4204472d8c.png)
