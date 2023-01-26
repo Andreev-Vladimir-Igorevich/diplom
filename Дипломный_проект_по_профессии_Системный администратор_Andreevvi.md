@@ -261,13 +261,19 @@ password : andreevvi
 
  Вот что получилось:
  
+![Снимок экрана от 2023-01-25 23-51-26](https://user-images.githubusercontent.com/94833070/214825280-ab831c69-7a47-4b77-b2eb-bc8e59f84a93.png)
 
+![Снимок экрана от 2023-01-25 23-51-37](https://user-images.githubusercontent.com/94833070/214825318-33ba73da-6d0e-49a3-a6d1-fc6eceffa3e8.png)
 
+![Снимок экрана от 2023-01-26 00-02-32](https://user-images.githubusercontent.com/94833070/214825439-29ddaadf-796f-453b-81c5-c756031ab3fd.png)
 
+![Снимок экрана от 2023-01-26 00-02-37](https://user-images.githubusercontent.com/94833070/214825479-fb62a8e6-b826-4515-a5cc-e9d95ac39639.png)
 
+![Снимок экрана от 2023-01-26 18-24-22](https://user-images.githubusercontent.com/94833070/214825669-a3d67575-d2fe-481c-9899-d76fb69cf937.png)
 
+![Снимок экрана от 2023-01-26 18-20-32](https://user-images.githubusercontent.com/94833070/214825703-19b571ab-197e-43e2-a402-1a4204472d8c.png)
 
-
+![Снимок экрана от 2023-01-26 18-20-37](https://user-images.githubusercontent.com/94833070/214825748-e2b1a596-7e5b-4922-8757-5c5599e8edc7.png)
 
  Grafana все видит и все работает)
 
